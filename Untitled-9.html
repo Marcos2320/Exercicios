@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercício 9 - Manipulação de Strings</title>
+</head>
+<body>
+  <h1>Exercício 9 - Manipulação de Strings</h1>
+  <button onclick="testarCapitalizacao()">Testar Função</button>
+  <p id="resultado"></p>
+
+  <script>
+    function capitalize(texto) {
+      return texto
+        .split(" ")
+        .map(palavra => palavra.charAt(0).toUpperCase() + palavra.slice(1))
+        .join(" ");
+    }
+
+    function testarCapitalizacao() {
+      const frase = prompt("Digite uma frase:");
+      const fraseCapitalizada = capitalize(frase);
+      document.getElementById("resultado").textContent = fraseCapitalizada;
+      console.log(fraseCapitalizada);
+    }
+  </script>
+</body>
+</html>

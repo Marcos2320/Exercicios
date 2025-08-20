@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercício 5 - Funções</title>
+</head>
+<body>
+  <h1>Exercício 5 - Funções</h1>
+  <button onclick="mostrarSoma()">Calcular Soma</button>
+
+  <script>
+    // Função que recebe dois números e retorna a soma
+    function soma(a, b) {
+      return a + b;
+    }
+
+    function mostrarSoma() {
+      const num1 = Number(prompt("Digite o primeiro número:"));
+      const num2 = Number(prompt("Digite o segundo número:"));
+      
+      const resultado = soma(num1, num2);
+
+      alert(`A soma de ${num1} + ${num2} é ${resultado}.`);
+      console.log(`A soma de ${num1} + ${num2} é ${resultado}.`);
+    }
+  </script>
+</body>
+</html>

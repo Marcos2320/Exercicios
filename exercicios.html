@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercício 1 - Entrada de Dados</title>
+</head>
+<body>
+  <h1>Exercício 1</h1>
+  <button onclick="mostrarMensagem()">Clique aqui para informar seu nome e idade</button>
+
+  <script>
+    function mostrarMensagem() {
+      const nome = prompt("Digite seu nome completo:");
+      const idade = prompt("Digite sua idade:");
+
+      console.log(`Olá, meu nome é ${nome} e eu tenho ${idade} anos.`);
+      alert(`Olá, meu nome é ${nome} e eu tenho ${idade} anos.`);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercício 6 - Arrays</title>
+</head>
+<body>
+  <h1>Exercício 6 - Arrays</h1>
+  <button onclick="mostrarFrutas()">Mostrar Frutas</button>
+  <ul id="listaFrutas"></ul>
+
+  <script>
+    function mostrarFrutas() {
+      const frutas = ["maçã", "banana", "laranja", "uva", "melancia"];
+      const lista = document.getElementById("listaFrutas");
+      lista.innerHTML = ""; // limpa a lista antes de mostrar
+
+      for (let fruta of frutas) {
+        const li = document.createElement("li");
+        li.textContent = fruta;
+        lista.appendChild(li);
+      }
+    }
+  </script>
+</body>
+</html>
+

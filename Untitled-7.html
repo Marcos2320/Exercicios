@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercício 7 - Objetos</title>
+</head>
+<body>
+  <h1>Exercício 7 - Objetos</h1>
+  <button onclick="mostrarLivro()">Mostrar Livro</button>
+  <div id="infoLivro"></div>
+
+  <script>
+    function mostrarLivro() {
+      const livro = {
+        titulo: "Dragon Ball",
+        autor: "Bolsonaro",
+        paginas: 328
+      };
+
+      const infoDiv = document.getElementById("infoLivro");
+      infoDiv.innerHTML = `
+        <p><strong>Título:</strong> ${livro.titulo}</p>
+        <p><strong>Autor:</strong> ${livro.autor}</p>
+        <p><strong>Páginas:</strong> ${livro.paginas}</p>
+      `;
+    }
+  </script>
+</body>
+</html>
